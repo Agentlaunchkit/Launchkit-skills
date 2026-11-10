@@ -18,7 +18,7 @@ Write a thread people finish: one hook, how it works, one concrete detail, how t
    python3 scripts/repo_facts.py owner/repo -o facts.json
    ```
    Then read the README and, if there is one, the latest release notes. Pick:
-   - the **hook**: the one thing it lets you do, stated plainly;
+   - the **hook**: the one thing it lets you do, stated plainly. Use `latest_release_date` or `fetched_on` from facts.json, never relative time ("last night", "today", "this week") — those go stale the next morning;
    - the **loop**: the 3–5 real commands or steps, copied exactly;
    - one **detail** that shows taste or care (a design decision, a failure it prevents);
    - the **try it** line: the real install command.
@@ -33,8 +33,13 @@ Write a thread people finish: one hook, how it works, one concrete detail, how t
    ```bash
    python3 scripts/check_thread.py thread.md --facts facts.json
    ```
+   The counter uses X's weighted length: each URL (http, www, or a bare domain X would link) counts as 23, each emoji cluster counts as 2, and CJK counts as 2. A self-check is `python3 scripts/check_thread.py --self-test`.
    Fix every ERROR. For each WARN about a number, confirm it in facts.json or the README, or cut it. Use `--long-posts` only if the user has X Premium and wants long posts.
-4. **Deliver** the thread as text with each post's character count, the fetch time of the facts (star counts go stale), and any image to attach (pair with the `og-image` skill).
+4. **Preview** (optional, needs Chrome):
+   ```bash
+   python3 scripts/render_thread.py thread.md -o thread.png --title "owner/repo launch thread"
+   ```
+5. **Deliver** the thread as text with each post's weighted character count, the fetch date of the facts (star counts go stale), the preview image if you made one, and any card to attach (pair with the `og-image` skill).
 
 ## Rules (X automation and spam rules plus basic honesty)
 - **Draft only.** Do not post, schedule, reply to strangers, or DM through any tool unless the user explicitly asks for that exact post.
@@ -44,4 +49,4 @@ Write a thread people finish: one hook, how it works, one concrete detail, how t
 - Numbers come from facts.json or the README, with the date they were read.
 
 ## Examples
-`examples/` has real drafts for `anthropics/skills` and `vercel-labs/agent-browser`, each with facts.json, thread.md and the lint report.
+`examples/` has real drafts for `anthropics/skills` and `vercel-labs/agent-browser`, each with facts.json, thread.md, the lint report, and a preview image.
