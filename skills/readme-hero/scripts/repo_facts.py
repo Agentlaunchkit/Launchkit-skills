@@ -42,6 +42,13 @@ def tagline(md):
 def human(n):
     return f"{n/1000:.1f}k".replace(".0k", "k") if n >= 1000 else str(n)
 
+def human_date(iso):
+    """UTC calendar date, e.g. 'Nov 10, 2026'. Use this in copy instead of 'last night'."""
+    if not iso:
+        return None
+    dt = datetime.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(datetime.timezone.utc)
+    return dt.strftime("%b %d, %Y").replace(" 0", " ")
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("repo")
@@ -70,9 +77,11 @@ def main():
         "topics": d.get("topics", []),
         "latest_release": rel.get("tag_name"),
         "latest_release_at": rel.get("published_at"),
+        "latest_release_date": human_date(rel.get("published_at")),
         "pushed_at": d.get("pushed_at"),
         "install_lines": first_code_block(md)[:3],
         "fetched_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        "fetched_on": human_date(datetime.datetime.now(datetime.timezone.utc).isoformat()),
     }
     out = json.dumps(facts, indent=2)
     if a.out:

@@ -25,17 +25,19 @@ Turn the first screen of a README into a clear pitch: what it does, how to start
      "subline": "≤120 chars: how it works, in the project's own words",
      "why": ["3 concrete reasons, ≤90 chars each, each traceable to the README"],
      "quickstart": ["exact lines copied from the README"],
-     "accent": "#hex", "npm": "package-name-if-any", "docs_url": "https://..."
+     "accent": "#hex", "npm": "package-name-if-any", "docs_url": "https://...",
+     "style": "bar"
    }
    ```
    - Lead with the reader's outcome ("A browser your agent drives from the shell"), not the category ("A Rust CLI").
    - `why` items must be checkable: a feature, a number, a supported platform. No "blazing fast" unless the README benchmarks it.
    - Quick start is copied verbatim. Never invent flags.
+   - `style` (optional): `bar` (default, accent stripe + dots), `terminal` (mono, window chrome), or `poster` (editorial type, accent rail).
 3. **Render**:
    ```bash
    python3 scripts/render_hero.py facts.json copy.json -o out/
    ```
-   This produces `hero-dark.png` and `hero-light.png` (2560x800) plus `HERO.md`, a paste-ready header that swaps the banner with the reader's GitHub theme.
+   This produces `hero-dark.png` and `hero-light.png` (2560x800) plus `HERO.md`, a paste-ready header that swaps the banner with the reader's GitHub theme. IBM Plex Sans and Mono are bundled in `fonts/` (SIL OFL 1.1), so the banners look the same on every machine.
 4. **Check**: open both PNGs. The headline must be readable at 50% width and nothing may be clipped. Then compare HERO.md against the README line by line: every claim must exist there.
 5. **Deliver** HERO.md with the two PNGs. Tell the user to put the PNGs in the repo (e.g. `.github/hero-dark.png`) and fix the `srcset`/`src` paths. Don't commit or push unless the user asked.
 
