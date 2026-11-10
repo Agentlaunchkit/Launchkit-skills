@@ -1,1 +1,24 @@
-{"repo": "Agentlaunchkit/Launchkit-skills", "url": "https://github.com/Agentlaunchkit/Launchkit-skills", "owner": "Agentlaunchkit", "name": "Launchkit-skills", "stars_human": "0", "license": "MIT", "latest_release": null}
+{
+  "repo": "Agentlaunchkit/Launchkit-skills",
+  "url": "https://github.com/Agentlaunchkit/Launchkit-skills",
+  "owner": "Agentlaunchkit",
+  "name": "Launchkit-skills",
+  "description": "",
+  "readme_tagline": "Every example was made by running the skill on a real public repo (vercel-labs/agent-browser, anthropics/skills). Facts were read from the GitHub API on Nov 10, 2026; star counts go stale.",
+  "stars": 0,
+  "stars_human": "0",
+  "forks": 0,
+  "language": "Python",
+  "license": "MIT",
+  "homepage": null,
+  "topics": [],
+  "latest_release": null,
+  "latest_release_at": null,
+  "latest_release_date": null,
+  "pushed_at": "2026-11-10T15:31:47Z",
+  "install_lines": [
+    "npx skills add Agentlaunchkit/Launchkit-skills"
+  ],
+  "fetched_at": "2026-11-10T16:37:51+00:00",
+  "fetched_on": "Nov 10, 2026"
+}

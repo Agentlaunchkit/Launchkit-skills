@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Mono';src:url('../../fonts/IBMPlexMono-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;background:#0b0b0f;color:#f5f5f7;font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body{padding:48px 56px 56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:#9a9aa5}
+h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;margin:10px 0 28px}
+.card{background:#16161d;border:1px solid #2a2a33;border-radius:16px;padding:22px 26px;margin:0 0 14px}
+.card.reply{border-color:#3dff8a55}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;font-size:16px;color:#9a9aa5}
+.num{color:#f5f5f7}
+.count.ok{color:#3dff8a}
+.count.over{color:#ff4d4d}
+.body{font-size:24px;line-height:1.45;white-space:normal;word-wrap:break-word}
+</style></head><body>
+<div class="kicker">draft · not posted</div>
+<h1>vercel-labs/agent-browser</h1>
+<div class="card ">
+  <div class="meta"><span class="num">1/5</span><span class="count ok">140/280</span></div>
+  <div class="body">vercel-labs/agent-browser shipped v0.42.0 on Nov 10 (49k stars).<br><br>It gives an AI agent a real browser it drives one shell command at a time.</div>
+</div><div class="card ">
+  <div class="meta"><span class="num">2/5</span><span class="count ok">255/280</span></div>
+  <div class="body">The loop:<br><br>agent-browser open example.com<br>agent-browser snapshot -i   → elements as refs like @e1<br>agent-browser click @e1<br>agent-browser get url       → check it worked<br><br>The browser stays open between commands, so each step is one short call.</div>
+</div><div class="card ">
+  <div class="meta"><span class="num">3/5</span><span class="count ok">213/280</span></div>
+  <div class="body">The detail I like: a click fails instead of reporting success when the target is hidden, disabled, off-screen or covered by something like a consent banner.<br><br>That one rule removes a whole class of silent failures.</div>
+</div><div class="card ">
+  <div class="meta"><span class="num">4/5</span><span class="count ok">192/280</span></div>
+  <div class="body">Also in the box: native Rust binaries for macOS, Linux and Windows, version-matched skills (agent-browser skills get core), and an MCP server (agent-browser mcp).<br><br>npm install -g agent-browser</div>
+</div><div class="card reply">
+  <div class="meta"><span class="num">REPLY</span><span class="count ok">59/280</span></div>
+  <div class="body">Repo: https://github.com/vercel-labs/agent-browser<br>Docs: https://agent-browser.dev</div>
+</div>
+</body></html>

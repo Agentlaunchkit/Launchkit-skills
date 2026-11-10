@@ -1,4 +1,4 @@
-vercel-labs/agent-browser shipped v0.42.0 last night (48.9k stars).
+vercel-labs/agent-browser shipped v0.42.0 on Nov 10 (49k stars).
 
 It gives an AI agent a real browser it drives one shell command at a time.
 ---

@@ -1,14 +1,18 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Mono';src:url('../../fonts/IBMPlexMono-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1280px;height:400px;overflow:hidden}
-body{background:#ffffff;color:#0b0b0f;font-family:'IBM Plex Sans','Inter','Helvetica Neue',Arial,sans-serif;position:relative}
+body{background:#ffffff;color:#0b0b0f;font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;position:relative;-webkit-font-smoothing:antialiased}
 .bar{position:absolute;left:0;top:0;bottom:0;width:10px;background:#50e3c2}
 .dots{position:absolute;right:0;top:0;bottom:0;width:420px;background-image:radial-gradient(#ececf1 2px,transparent 2px);background-size:22px 22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 60%)}
 .wrap{position:absolute;inset:0;padding:56px 80px;display:flex;flex-direction:column;justify-content:center}
-.repo{font-family:'IBM Plex Mono',monospace;font-size:24px;color:#55555f}
+.repo{font-family:'IBM Plex Mono',monospace;font-size:22px;color:#55555f}
 .repo b{color:#50e3c2;font-weight:600}
-h1{font-size:64px;line-height:1.05;font-weight:700;letter-spacing:-1.5px;margin-top:18px;max-width:1000px;text-wrap:balance}
-p{font-size:26px;line-height:1.35;color:#55555f;margin-top:18px;max-width:940px}
+h1{font-size:64px;line-height:1.05;font-weight:700;letter-spacing:-0.03em;margin-top:16px;max-width:1000px;text-wrap:balance}
+p{font-size:26px;line-height:1.35;color:#55555f;margin-top:16px;max-width:940px}
 </style></head><body><div class="bar"></div><div class="dots"></div><div class="wrap">
 <div class="repo">vercel-labs/<b>agent-browser</b></div>
 <h1>A browser your agent drives from the shell</h1><p>Snapshot the page as an accessibility tree, act on a ref like @e1, read again to check. One short command per step.</p></div></body></html>

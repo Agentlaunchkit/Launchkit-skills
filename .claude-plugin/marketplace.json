@@ -1,7 +1,7 @@
 {
   "name": "Launchkit-skills",
   "owner": { "name": "Agentlaunchkit" },
-  "metadata": { "description": "Agent skills that make launch assets for what your agent just built", "version": "0.1.0" },
+  "metadata": { "description": "Agent skills that make launch assets for what your agent just built", "version": "0.2.0" },
   "plugins": [
     {
       "name": "launchkit",

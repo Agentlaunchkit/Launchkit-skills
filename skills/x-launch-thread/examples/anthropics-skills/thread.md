@@ -1,4 +1,4 @@
-anthropics/skills is at 191.9k stars, and the core idea is almost boring:
+anthropics/skills is at 192k stars as of Nov 10, and the core idea is almost boring:
 
 a skill is a folder with a SKILL.md. Name and description up top, instructions below. The agent loads it only when a task matches.
 ---

@@ -5,19 +5,21 @@
   "name": "agent-browser",
   "description": "Browser automation CLI for AI agents",
   "readme_tagline": "Browser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell.",
-  "stars": 48949,
-  "stars_human": "48.9k",
-  "forks": 3391,
+  "stars": 49024,
+  "stars_human": "49k",
+  "forks": 3440,
   "language": "Rust",
   "license": "Apache-2.0",
   "homepage": "https://agent-browser.dev",
   "topics": [],
   "latest_release": "v0.42.0",
   "latest_release_at": "2026-11-10T00:37:19Z",
-  "pushed_at": "2026-11-10T01:45:24Z",
+  "latest_release_date": "Nov 10, 2026",
+  "pushed_at": "2026-11-10T16:32:27Z",
   "install_lines": [
     "npm install -g agent-browser",
     "agent-browser install"
   ],
-  "fetched_at": "2026-11-10T14:16:56+00:00"
+  "fetched_at": "2026-11-10T16:37:48+00:00",
+  "fetched_on": "Nov 10, 2026"
 }

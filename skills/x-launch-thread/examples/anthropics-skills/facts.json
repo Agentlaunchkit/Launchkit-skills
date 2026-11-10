@@ -5,9 +5,9 @@
   "name": "skills",
   "description": "Public repository for Agent Skills",
   "readme_tagline": "Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, whether that's creating documents with your company's brand guidelines, analyzing data using your organization's specific workflows, or automating personal tasks.",
-  "stars": 191870,
-  "stars_human": "191.9k",
-  "forks": 22541,
+  "stars": 191978,
+  "stars_human": "192k",
+  "forks": 22614,
   "language": "Python",
   "license": null,
   "homepage": null,
@@ -16,9 +16,11 @@
   ],
   "latest_release": null,
   "latest_release_at": null,
+  "latest_release_date": null,
   "pushed_at": "2026-11-06T22:32:32Z",
   "install_lines": [
     "/plugin marketplace add anthropics/skills"
   ],
-  "fetched_at": "2026-11-10T14:16:56+00:00"
+  "fetched_at": "2026-11-10T16:37:50+00:00",
+  "fetched_on": "Nov 10, 2026"
 }

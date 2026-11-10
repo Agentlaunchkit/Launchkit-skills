@@ -1,14 +1,18 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Sans';src:url('../../fonts/IBMPlexSans-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Mono';src:url('../../fonts/IBMPlexMono-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1280px;height:400px;overflow:hidden}
-body{background:#0b0b0f;color:#f5f5f7;font-family:'IBM Plex Sans','Inter','Helvetica Neue',Arial,sans-serif;position:relative}
+body{background:#0b0b0f;color:#f5f5f7;font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;position:relative;-webkit-font-smoothing:antialiased}
 .bar{position:absolute;left:0;top:0;bottom:0;width:10px;background:#d97757}
 .dots{position:absolute;right:0;top:0;bottom:0;width:420px;background-image:radial-gradient(#1c1c24 2px,transparent 2px);background-size:22px 22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 60%)}
 .wrap{position:absolute;inset:0;padding:56px 80px;display:flex;flex-direction:column;justify-content:center}
-.repo{font-family:'IBM Plex Mono',monospace;font-size:24px;color:#a0a0ab}
+.repo{font-family:'IBM Plex Mono',monospace;font-size:22px;color:#a0a0ab}
 .repo b{color:#d97757;font-weight:600}
-h1{font-size:64px;line-height:1.05;font-weight:700;letter-spacing:-1.5px;margin-top:18px;max-width:1000px;text-wrap:balance}
-p{font-size:26px;line-height:1.35;color:#a0a0ab;margin-top:18px;max-width:940px}
+h1{font-size:64px;line-height:1.05;font-weight:700;letter-spacing:-0.03em;margin-top:16px;max-width:1000px;text-wrap:balance}
+p{font-size:26px;line-height:1.35;color:#a0a0ab;margin-top:16px;max-width:940px}
 </style></head><body><div class="bar"></div><div class="dots"></div><div class="wrap">
 <div class="repo">anthropics/<b>skills</b></div>
 <h1>Teach Claude a task once, as a folder</h1><p>Skills are folders of instructions, scripts and resources that Claude loads dynamically for specialized tasks.</p></div></body></html>
