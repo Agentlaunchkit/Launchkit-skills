@@ -1,0 +1,18 @@
+{
+  "headline": "A browser your agent drives from the shell",
+  "subline": "Snapshot the page as an accessibility tree, act on a ref like @e1, read again to check. One short command per step.",
+  "why": [
+    "Native Rust CLI with binaries for macOS, Linux (glibc + musl) and Windows",
+    "Clicks fail loudly when the target is hidden, disabled or covered",
+    "Ships version-matched skills (agent-browser skills get core) plus an MCP server"
+  ],
+  "quickstart": [
+    "npm install -g agent-browser",
+    "agent-browser install",
+    "agent-browser open example.com",
+    "agent-browser snapshot -i"
+  ],
+  "accent": "#50e3c2",
+  "npm": "agent-browser",
+  "docs_url": "https://agent-browser.dev"
+}

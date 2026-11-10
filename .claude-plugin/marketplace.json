@@ -1,0 +1,14 @@
+{
+  "name": "Launchkit-skills",
+  "owner": { "name": "Agentlaunchkit" },
+  "metadata": { "description": "Agent skills that make launch assets for what your agent just built", "version": "0.1.0" },
+  "plugins": [
+    {
+      "name": "launchkit",
+      "description": "og-image, readme-hero and x-launch-thread: social cards, README headers and launch threads from real repo facts",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/og-image", "./skills/readme-hero", "./skills/x-launch-thread"]
+    }
+  ]
+}

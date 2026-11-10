@@ -1,0 +1,6 @@
+{"headline": "Launch assets for whatever your agent just built",
+ "subline": "Agent skills that turn a repo into a social card, a README header and an X thread, using only facts from the repo.",
+ "why": ["Every number comes from the GitHub API or the README, with the date it was read",
+         "Renders PNGs with the Chrome you already have; no design tool, no account",
+         "Drafts only: nothing is posted or pushed without you"],
+ "accent": "#ff4d4d"}

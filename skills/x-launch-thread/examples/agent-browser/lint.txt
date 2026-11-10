@@ -1,0 +1,8 @@
+[post 1] 143/280  ok
+[post 2] 255/280
+   WARN: link in a main post; consider moving it to the REPLY
+[post 3] 213/280  ok
+[post 4] 192/280  ok
+[reply] 59/280  ok
+
+5 posts, 0 errors, 1 warnings

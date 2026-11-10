@@ -1,0 +1,1 @@
+{"headline": "A browser your agent drives from the shell", "subline": "Snapshot the page as an accessibility tree, act on refs like @e1, check, repeat. Native Rust CLI.", "command": "npm install -g agent-browser", "accent": "#50e3c2"}

@@ -1,0 +1,15 @@
+{
+  "headline": "Teach Claude a task once, as a folder",
+  "subline": "Skills are folders of instructions, scripts and resources that Claude loads dynamically for specialized tasks.",
+  "why": [
+    "Each skill is self-contained: one folder with a SKILL.md (name + description frontmatter)",
+    "Includes the docx, pdf, pptx and xlsx skills behind Claude's document features",
+    "Works in Claude Code (plugin marketplace), Claude.ai paid plans and the Claude API"
+  ],
+  "quickstart": [
+    "/plugin marketplace add anthropics/skills",
+    "/plugin install document-skills@anthropic-agent-skills"
+  ],
+  "accent": "#d97757",
+  "docs_url": "https://agentskills.io"
+}
